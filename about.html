@@ -1,26 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>About - My Portfolio</title>
+  <title>My Portfolio - About</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <header>
-    <h1>About This Project</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="container nav-container">
+      <h1 class="logo">My Portfolio</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h2>Automated Portfolio Deployment</h2>
-    <p>
-      This website is automatically deployed using a CI/CD pipeline configured with GitHub Actions.
-      Whenever I push changes to the main branch, GitHub Actions builds and deploys the site to GitHub Pages.
-    </p>
+  <main class="container">
+    <section class="section">
+      <h2>About Me</h2>
+      <p>
+        I am a student interested in web development, cloud computing,
+        and DevOps. This portfolio demonstrates how a simple static
+        website can be deployed using an automated CI/CD pipeline.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>About This Project</h2>
+      <p>
+        This project is called <strong>Automated Portfolio Website Deployment using
+        CI/CD Pipeline</strong>. The main idea is to deploy this static site
+        automatically using GitHub Actions. Whenever I push changes to the
+        <code>main</code> branch, GitHub Actions:
+      </p>
+      <ul>
+        <li>Checks out the repository</li>
+        <li>Prepares the site files as an artifact</li>
+        <li>Deploys the latest version to GitHub Pages</li>
+      </ul>
+      <p>
+        This removes manual deployment steps and ensures the live site
+        always reflects the latest code.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Git & GitHub</span>
+        <span>GitHub Actions</span>
+        <span>CI/CD Concepts</span>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <p>&copy; 2025 Pavan. All rights reserved.</p>
+  </footer>
 </body>
 </html>

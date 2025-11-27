@@ -1,30 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>CI-CD setup - Home</title>
+  <title>My Portfolio - Home</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <header>
-    <h1>Automated Portfolio Website Deployment using CI/CD Pipeline </h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <h2>Welcome!</h2>
-<p>This text is updated to test CI/CD.</p>
-
+    <div class="container nav-container">
+      <h1 class="logo">My Portfolio</h1>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h2>Welcome!</h2>
-    <p>This is my portfolio website deployed using a CI/CD pipeline with GitHub Actions and GitHub Pages.</p>
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h2>Hello, I'm <span class="highlight">Pavan</span></h2>
+        <p>
+          This is my portfolio website, automatically deployed using a
+          CI/CD pipeline with GitHub Actions and GitHub Pages.
+        </p>
+        <a href="about.html" class="btn">Know More</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>Projects</h3>
+      <div class="cards">
+        <div class="card">
+          <h4>Automated Portfolio Deployment</h4>
+          <p>
+            Static website deployed automatically using GitHub Actions whenever
+            new changes are pushed to the main branch.
+          </p>
+        </div>
+        <div class="card">
+          <h4>Sample Project 2</h4>
+          <p>
+            You can describe another mini project or coursework here to show
+            your skills.
+          </p>
+        </div>
+        <div class="card">
+          <h4>Sample Project 3</h4>
+          <p>
+            Add any placeholder description. This is just to make the portfolio
+            look complete.
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Naidu Pavan</p>
+    <p>&copy; 2025 Pavan. All rights reserved.</p>
   </footer>
 </body>
 </html>

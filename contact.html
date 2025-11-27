@@ -1,33 +1,60 @@
-<main>
-  <h2 style="text-align: center;">Contact Form</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Portfolio - Contact</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">My Portfolio</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <form onsubmit="submitForm(); return false;" 
-        style="max-width: 400px; margin: auto; text-align: center;">
+  <main class="container">
+    <section class="section">
+      <h2 class="center">Contact Me</h2>
+      <p class="center">
+        Feel free to send a message. This form is for demo purposes only,
+        but it shows a success message when submitted.
+      </p>
 
-    <label>Name:</label><br />
-    <input type="text" id="name"
-      style="width: 100%; padding: 10px; margin: 10px 0;" /><br />
+      <form onsubmit="submitForm(); return false;" class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" required />
 
-    <label>Email:</label><br />
-    <input type="email" id="email"
-      style="width: 100%; padding: 10px; margin: 10px 0;" /><br />
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
 
-    <label>Message:</label><br />
-    <textarea id="message" rows="4"
-      style="width: 100%; padding: 10px; margin: 10px 0;"></textarea><br />
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" required></textarea>
 
-    <button type="submit"
-      style="padding: 10px 20px; font-size: 16px; cursor: pointer;">
-      Send
-    </button>
-  </form>
+        <button type="submit">Send</button>
+      </form>
 
-  <p id="result"
-     style="color: green; font-weight: bold; margin-top: 20px; text-align: center;"></p>
+      <p id="result" class="result-msg"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Pavan. All rights reserved.</p>
+  </footer>
 
   <script>
     function submitForm() {
-      document.getElementById("result").innerHTML = "Response Submitted";
+      const result = document.getElementById("result");
+      result.innerHTML = "Response Submitted";
+      // optional: clear the form
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("message").value = "";
     }
   </script>
-</main>
+</body>
+</html>
