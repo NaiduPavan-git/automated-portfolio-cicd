@@ -1,0 +1,33 @@
+<main>
+  <h2 style="text-align: center;">Contact Form</h2>
+
+  <form onsubmit="submitForm(); return false;" 
+        style="max-width: 400px; margin: auto; text-align: center;">
+
+    <label>Name:</label><br />
+    <input type="text" id="name"
+      style="width: 100%; padding: 10px; margin: 10px 0;" /><br />
+
+    <label>Email:</label><br />
+    <input type="email" id="email"
+      style="width: 100%; padding: 10px; margin: 10px 0;" /><br />
+
+    <label>Message:</label><br />
+    <textarea id="message" rows="4"
+      style="width: 100%; padding: 10px; margin: 10px 0;"></textarea><br />
+
+    <button type="submit"
+      style="padding: 10px 20px; font-size: 16px; cursor: pointer;">
+      Send
+    </button>
+  </form>
+
+  <p id="result"
+     style="color: green; font-weight: bold; margin-top: 20px; text-align: center;"></p>
+
+  <script>
+    function submitForm() {
+      document.getElementById("result").innerHTML = "Response Submitted";
+    }
+  </script>
+</main>
