@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="DLE" company="" webLink="http://" view-date="2024-12-01" view-index="0" gantt-divider-location="421" resource-divider-location="300" version="3.3.3312" locale="en_IN">
+    <description/>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="Name" width="161" order="0"/>
+        <field id="tpd4" name="Begin date" width="114" order="1"/>
+        <field id="tpd5" name="End date" width="75" order="2"/>
+        <field id="tpd15" name="Notes" width="20" order="3"/>
+        <field id="tpd6" name="Duration" width="50" order="3"/>
+        <field id="tpd10" name="ID" width="20" order="4"/>
+        <option id="taskLabelUp" value="name"/>
+        <option id="taskLabelDown" value="coordinator"/>
+        <option id="taskLabelLeft" value="predecessors"/>
+        <option id="taskLabelRight" value="id"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <option id="color.recent"><![CDATA[#99ccff #f4f4f4]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="0f3b245421554e4693dbc835c0c55c5d" name="12" color="#99ccff" meeting="false" start="2024-12-09" duration="7" complete="0" expand="true">
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="7" uid="70eb069bc67d47cda48d77ff960b645f" name="24" meeting="false" start="2024-12-18" duration="5" complete="0" expand="true">
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+            <depend id="8" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="8" uid="7bc6f5876e4e4cddab627d5f5bf53931" name="45" meeting="false" start="2024-12-25" duration="7" complete="0" expand="true"/>
+        <task id="4" uid="67db5392b9584e86b9d4f9a5d89aa9d0" name="23" meeting="false" start="2024-12-25" duration="14" complete="0" expand="true">
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="5" uid="c298224b77f24f40adb7943c262a7ad4" name="35" meeting="false" start="2025-01-14" duration="11" complete="0" expand="true">
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="6" uid="d406633a7ce0403ca4b8946c6887669a" name="58" meeting="false" start="2025-01-29" duration="4" complete="0" expand="true"/>
+        <task id="9" uid="8c41710f7748467cbbcb4a554db37b50" name="16" meeting="false" start="2024-12-09" duration="6" complete="0" expand="true">
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="2" uid="8a458952f5df4e329f62b7127f7665d6" name="67" meeting="false" start="2024-12-17" duration="11" complete="0" expand="true">
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="3" uid="5cdad5f81cf94e55a3f8f327411f3c0d" name="78" meeting="false" start="2025-01-01" duration="18" complete="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Digital Learning Environment" function="Default:0" contacts="" phone=""/>
+        <resource id="1" name="Me" function="Default:1" contacts="" phone=""/>
+        <resource id="2" name="thee" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="0" function="Default:0" responsible="false" load="25.0"/>
+        <allocation task-id="0" resource-id="1" function="Default:1" responsible="true" load="50.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
